@@ -1,0 +1,4 @@
+{
+  "eventName": "PutUserPolicy",
+  "userIdentity": { "type": "IAMUser" }
+}
