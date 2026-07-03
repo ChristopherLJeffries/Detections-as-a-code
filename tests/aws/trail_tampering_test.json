@@ -1,0 +1,4 @@
+{
+  "eventName": "UpdateTrail",
+  "newS3Bucket": "unknown-bucket"
+}
