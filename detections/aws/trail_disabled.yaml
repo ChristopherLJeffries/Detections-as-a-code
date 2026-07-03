@@ -1,0 +1,9 @@
+title: "Failed Login"
+description: "Someone tried to log in and it didn’t work."
+severity: "medium"
+
+logic:
+  query: |
+    fields @timestamp, eventName
+    | filter eventName = "ConsoleLogin"
+    | filter responseElements.ConsoleLogin = "Failure"
