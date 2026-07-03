@@ -1,0 +1,10 @@
+title: "AWS Failed Login Detection"
+description: "Alerts when someone fails to log in to AWS."
+severity: "medium"
+
+logic:
+  query: |
+    fields @timestamp, eventName, userIdentity.arn, sourceIPAddress
+    | filter eventName = "ConsoleLogin"
+    | filter responseElements.ConsoleLogin = "Failure"
+    | sort @timestamp desc
