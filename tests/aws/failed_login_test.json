@@ -1,0 +1,6 @@
+{
+  "eventName": "ConsoleLogin",
+  "responseElements": { "ConsoleLogin": "Failure" },
+  "sourceIPAddress": "10.0.0.1",
+  "userIdentity": { "arn": "arn:aws:iam::123:user/test" }
+}
